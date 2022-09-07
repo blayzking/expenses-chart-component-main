@@ -1,0 +1,153 @@
+html, body {
+    background-color: hsl(27, 66%, 92%);
+    font-family: DM Sans, sans-serif;
+    font-size: 18px;
+}
+    
+/* This '*' sign means ' to all elements of the page', followed by the code to apply */
+* {
+    margin: 0;
+    padding: 0;
+    /* Declaring this allows you to add padding to your div without increasing the size of the div itself. */
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+  }
+
+.main-body {
+    position: absolute;
+    height: 60%;
+    /* width: 25%; */
+    width: min(100% - 2em, 400px);
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+}
+
+h1 {
+    color: hsl(25, 47%, 15%);
+}
+
+p{
+    color: hsl(25, 47%, 15%);
+}
+.top-part {
+    background-color: hsl(10, 79%, 65%);
+    height: 90px;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+span {
+    padding: 1px 8px;
+}
+
+span::after {
+    content: '\a';
+    white-space: pre;
+}
+
+.circle-icons {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    float: right;
+    bottom: 45px;
+    right: 15px;
+}
+
+.smaller-font {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    top: 5px;
+    color: hsl(33, 100%, 98%);
+}
+
+.bigger-font {
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    top: 8px;
+    color: hsl(33, 100%, 98%);
+}
+
+.bottom-part {
+    margin-top: 20px;
+    background-color: hsl(33, 100%, 98%);
+    border-radius: 15px;
+    padding: 30px;
+}
+.container {
+    width: 70%;
+    height: 250px;
+}
+
+.chartBox {
+    width: 140%;
+    margin-top: 10px;
+}
+
+#myChart {
+    width: 500px;
+    height: 400px;
+}
+
+.line {
+    position: relative;
+    top: -60px;
+}
+.left-side {
+    position: relative;
+    top: -30px;
+}
+
+.total {
+    font-size: 13px;
+    color: hsl(25, 47%, 15%, 0.5);
+}
+
+.amt {
+    font-size: 35px;
+    font-weight: 700;
+}
+.right-side {
+    position: relative;
+    top: -75px;
+    float: right;
+}
+
+.percentage {
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    left: 63px;
+}
+
+.time {
+    font-size: 14px;
+    color: hsl(25, 47%, 15%, 0.5);
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsla(0, 0%, 99%, 0.534); }
+.attribution {
+    position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/ 
+            height: 40px;
+            background: grey;
+}
+
+@media screen and (max-width: 500px) {
+    .line {
+        position: relative;
+    top: -60px;
+    }
+}
